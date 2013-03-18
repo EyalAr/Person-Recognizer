@@ -6,8 +6,7 @@
 #ifndef PERSONRECOGNIZER_H
 #define	PERSONRECOGNIZER_H
 
-#define PERSON_LABEL_A 10
-#define PERSON_LABEL_B 11
+#define PERSON_LABEL 10 //some arbitrary label
 
 #include <string>
 #include "cv.hpp"
@@ -19,7 +18,8 @@ using namespace cv;
 
 class PersonRecognizer {
 public:
-    PersonRecognizer(const vector<Mat> &imgs);
+    PersonRecognizer(const vector<Mat> &imgs, int radius, int neighbors,
+            int grid_x, int grid_y, double threshold);
     virtual ~PersonRecognizer();
     bool recognize(const Mat &face, double &confidence) const;
 private:

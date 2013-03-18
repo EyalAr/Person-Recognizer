@@ -13,7 +13,7 @@
 
 /** Inputs: **/
 #define CASCADE_PATH  "cascades/haarcascade_frontalface_default.xml"
-#define IN_VID        "C:/Users/Eyal/Downloads/031213_POTUS_ExportCouncil_HD.mp4"
+#define IN_VID        "input_vid/031213_POTUS_ExportCouncil_HD.mp4"
 #define TRAINING_LIST "obama_faces/list"
 
 /** Input video: **/
@@ -37,7 +37,7 @@
 #define LINE_TYPE         CV_AA
 #define FONT              FONT_HERSHEY_PLAIN
 #define FONT_COLOR        Scalar(255,255,255)
-#define THICKNESS_TITLE   2
+#define THICKNESS_TITLE   1.9
 #define SCALE_TITLE       1.9
 #define POS_TITLE         cvPoint(10, 30)
 #define THICKNESS_LINK    1.6
@@ -45,10 +45,17 @@
 #define POS_LINK          cvPoint(10, 55)
 
 /** Face detector: **/
-#define DET_SCALE_FACTOR 1.01
-#define DET_MIN_NEIGHBORS 40
+#define DET_SCALE_FACTOR   1.01
+#define DET_MIN_NEIGHBORS  40
 #define DET_MIN_SIZE_RATIO 0.06
 #define DET_MAX_SIZE_RATIO 0.18
+
+/** LBPH face recognizer: **/
+#define LBPH_RADIUS    3
+#define LBPH_NEIGHBORS 8
+#define LBPH_GRID_X    8
+#define LBPH_GRID_Y    8
+#define LBPH_THRESHOLD 180.0
 
 #endif	/* DEFS_H */
 

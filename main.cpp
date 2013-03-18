@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
     
     read_training_set(string(TRAINING_LIST), training_set);
     
-    PersonRecognizer pr(training_set);
+    PersonRecognizer pr(training_set, LBPH_RADIUS, LBPH_NEIGHBORS, LBPH_GRID_X, LBPH_GRID_Y, LBPH_THRESHOLD);
     
     /**********************/
     
