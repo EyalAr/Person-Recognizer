@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>CsvWriter.cpp</itemPath>
+      <itemPath>CsvWriter.h</itemPath>
+      <itemPath>FaceDetector.cpp</itemPath>
+      <itemPath>FaceDetector.h</itemPath>
+      <itemPath>FramesReader.cpp</itemPath>
+      <itemPath>FramesReader.h</itemPath>
+      <itemPath>FramesWriter.cpp</itemPath>
+      <itemPath>FramesWriter.h</itemPath>
+      <itemPath>PersonRecognizer.cpp</itemPath>
+      <itemPath>PersonRecognizer.h</itemPath>
+      <itemPath>PrepareFaces.cpp</itemPath>
+      <itemPath>defs.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile_NB</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile_NB</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>C:/opencv244/build/include</pElem>
+            <pElem>C:/opencv244/build/include/opencv</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>C:/opencv244/release/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_contrib244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_core244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect244.dll</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="PrepareFaces.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+    <conf name="PrepareFaces_Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>C:/opencv244/build/include</pElem>
+            <pElem>C:/opencv244/build/include/opencv</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>C:/opencv244/build/x86/mingw/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_core244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc244.dll</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect244.dll</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="CsvWriter.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="CsvWriter.h" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="FramesReader.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="FramesReader.h" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="FramesWriter.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="FramesWriter.h" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="PersonRecognizer.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="PersonRecognizer.h" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
